@@ -1,0 +1,27 @@
+{
+  "platform-version": "2.2",
+  "product": {
+    "freshservice": {
+      "events": {
+        "onTicketCreate": {
+          "handler": "onTicketCreateCallback"
+        },
+        "onTicketUpdate": {
+          "handler": "onTicketCreateCallback"
+        },
+        "onConversationCreate": {
+          "handler": "onConversationCreateCallback"
+        }
+      }
+    }
+  },
+  "whitelisted-domains": [
+    "https://*.freshservice.com",
+    "https://s3.execulia.com",
+    "https://s3-application.practice-domain.tech"
+  ],
+  "engines": {
+    "node": "14.21.2",
+    "fdk": "8.6.7"
+  }
+}
